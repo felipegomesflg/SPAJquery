@@ -4,26 +4,21 @@
         <form class="form-material m-t-40">
             <div class="form-group">
                 <label>Usuário</label>
-                <select class="custom-select col-12"
-                    id="inlineFormCustomSelect">
-                    <option selected="">Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <select class="custom-select col-12 valida" id="users" name="userId">
+                    <option selected value="">Escolha um Usuário...</option>
                 </select>
             </div>
             <div class="form-group">
                 <label>Titulo</label>
-                <input type="text" class="form-control form-control-line"
-                    value="">
+                <input type="text" class="form-control form-control-line valida" value="" name="title">
             </div>
             <div class="form-group">
                 <label>Post</label>
-                <textarea class="form-control" rows="5"></textarea>
+                <textarea class="form-control valida" rows="5" name="body"></textarea>
             </div>
             <div class="form-group">
                 <button type="button" class="btn btn-success waves-effect
-                    waves-light m-r-10">Enviar</button>
+                    waves-light m-r-10" onclick="newPost()">Enviar</button>
             </div>
         </form>
     </div>

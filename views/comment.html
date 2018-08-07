@@ -1,25 +1,23 @@
 <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">Novo Comentário</h4>
-            <form class="form-material m-t-40">
-                <div class="form-group">
-                    <label>Nome</label>
-                    <input type="text" class="form-control form-control-line"
-                        value="">
-                </div>
-                <div class="form-group">
-                        <label>Email</label>
-                        <input type="text" class="form-control form-control-line"
-                            value="">
-                    </div>
-                <div class="form-group">
-                    <label>Mensagem</label>
-                    <textarea class="form-control" rows="5"></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="button" class="btn btn-success waves-effect
-                        waves-light m-r-10">Enviar</button>
-                </div>
-            </form>
-        </div>
+    <div class="card-body">
+        <h4 class="card-title">Novo Comentário</h4>
+        <form class="form-material m-t-40">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" class="form-control form-control-line valida" value="" name="name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control form-control-line valida" value="" name="email">
+            </div>
+            <div class="form-group">
+                <label>Mensagem</label>
+                <textarea class="form-control valida" rows="5" name="body"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-success waves-effect
+                        waves-light m-r-10" onclick="newComment()">Enviar</button>
+            </div>
+        </form>
     </div>
+</div>
